@@ -1,0 +1,99 @@
+body {
+	background-image: url(./images/thespoils_background.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+	margin: 20px;
+	margin-bottom: 50px;
+}
+
+p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+/* toc */
+div.toc {
+	margin-top: 75px;
+}
+
+div.toc p {
+	text-align: center;
+}
+
+/* headings */
+h1 {
+	text-align: center;
+	font-size: 200%;
+	margin-top: 75px;
+	margin-bottom: 12px;
+}
+
+h2 {
+	font-size: 125%;
+	margin-left: 16px;
+	margin-right: 6px;
+	margin-top: 20px;
+	margin-bottom: 4px;
+}
+
+h3 {
+	font-size: 105%;
+	margin-top: 12px;
+	margin-bottom: 4px;
+}
+
+/* list */
+ul.list {
+	list-style-type: disc;
+	margin-top: 4px;
+	margin-left: 16px;
+}
+
+ol.numberlist {
+	margin-top: 4px;
+	margin-left: 26px;
+}
+
+/* column layout */
+/*
+div.columnlayout {
+	columns: 350px auto;
+	-moz-columns: 350px auto;
+	-webkit-columns: 350px auto;
+	column-gap: 50px;
+	-moz-column-gap: 50px;
+	-webkit-column-gap: 50px;
+}
+
+div.nobreak {
+	break-inside: avoid-column;
+}
+*/
+
+/* img */
+img.floatright {
+	float: right;
+	margin: 20px;
+	width: 350px;
+}
+
+img.floatleft {
+	float: left;
+	margin: 20px;
+	width: 100px;
+}
+
+img.logo {
+	display: block;
+	width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<link rel="stylesheet" type="text/css" href="interface.css">
+<head><title>
+	The Spoils OCTGN Interface
+</title></head>
+<body>
+	<table>
+		<tr>
+			<th>Action</th>
+			<th>Shortcuts / Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				All cards that have not been in play since the start of the
+				turn, are highlighted orange
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/nsot.png" alt="Card with orange highlight" />
+					<div id="rescaled_img_wrap">
+						<a href="images/nsot.png">
+						<img id="rescaled_img" src="images/nsot.png" alt="Card with orange highlight" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Play a card from hand</td>
+			<td><sc>Doubleclick</sc></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Play a card as facedown resource from hand</td>
+			<td>
+				<p><sc>Alt + Leftclick</sc></p>
+				<p><sc>F9</sc></p>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Attack with a card</td>
+			<td>
+				<p><sc>Ctrl + A</sc></p>
+				<p>Attacking cards are highlighted red<p>
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/attack.png" alt="Attack with a card" />
+					<div id="rescaled_img_wrap">
+						<a href="images/attack.png">
+						<img id="rescaled_img" src="images/attack.png" alt="Attack with a card" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Block with a card</td>
+			<td>
+				<p><sc>Ctrl + B</sc></p>
+				<p>Blocking cards are highlighted blue<p>
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/block.png" alt="Block with a card" />
+					<div id="rescaled_img_wrap">
+						<a href="images/block.png">
+						<img id="rescaled_img" src="images/block.png" alt="Block with a card" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Use a card's ability</td>
+			<td>
+				<p><sc>Tab + Leftclick</sc></p>
+				<p><sc>Ctrl + E</sc></p>
+				<p>Using a card's ability highlights it white<p>
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/use_ability.png" alt="Use a card's ability" />
+					<div id="rescaled_img_wrap">
+						<a href="images/use_ability.png">
+						<img id="rescaled_img" src="images/use_ability.png" alt="Use a card's ability" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Attach/detach to/from faction</td>
+			<td>
+				<p><sc>Doubleclick</sc>, on resources</p>
+				<p><sc>F7</sc></p>
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/attach_detach_res.png"
+					alt="Attaching/detaching a resource" />
+					<div id="rescaled_img_wrap">
+						<a href="images/attach_detach_res.png">
+						<img id="rescaled_img" src="images/attach_detach_res.png"
+						alt="Attaching/detaching a resource" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Deplete/restore a card</td>
+			<td>
+				<p><sc>Doubleclick</sc>, on non-resource cards</p>
+				<p><sc>F8</sc></p>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Attach a card</td>
+			<td><sc>Shift + Leftclick</sc> on target, <sc>Ctrl + Q</sc></td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/attach.png" alt="Attaching a card" />
+					<div id="rescaled_img_wrap">
+						<a href="images/attach.png">
+						<img id="rescaled_img" src="images/attach.png" alt="Attaching a card" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Detach a card</td>
+			<td><sc>Ctrl + Q</sc></td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/detach.png" alt="Detaching a card" />
+					<div id="rescaled_img_wrap">
+						<a href="images/detach.png">
+						<img id="rescaled_img" src="images/detach.png" alt="Detaching a card" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Flip Up/Down a card</td>
+			<td><sc>Ctrl + F</sc>, use this to let your opponent respond to the Flip Up</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Reveal/hide a facedown card</td>
+			<td><sc>Alt + F</sc></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Add a card to an "Out of Game"-pile</td>
+			<td>
+				<p><sc>Ctrl + M</sc> to create a custom marker and give it a name starting with "oog"</p>
+				<p>In order to use such a card, first remove the "oog"-marker</p>
+			</td>
+			<td>
+				<!-- nasty resize workaround -->
+				<div id="img_wrap">
+					<img id="original_img" src="images/oog.png" alt="Add a Out of Game marker" />
+					<div id="rescaled_img_wrap">
+						<a href="images/oog.png">
+						<img id="rescaled_img" src="images/oog.png" alt="Add a Out of Game marker" />
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

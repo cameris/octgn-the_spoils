@@ -1,0 +1,106 @@
+body {
+	background-image: url(./images/thespoils_background.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+	margin: 20px;
+	margin-bottom: 50px;
+}
+
+sc { /* shortcut */
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* table */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* table head */
+th {
+	font-size: 20px;
+	border-radius: 3px;
+	background:rgba(221,221,32,0.7);
+	padding: 10px;
+}
+
+table th:nth-child(1) {
+	border-radius: 20px 3px 3px 3px;
+	padding-left: 25px;
+}
+table th:nth-last-child(1) {
+	border-radius: 3px 20px 3px 3px;
+	padding-right: 25px;
+}
+
+/* table rows and cells */
+td {
+	text-align: center;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+table tr:nth-child(odd) td {
+	background:rgba(0,0,0,0.1);
+}
+table tr:nth-child(odd) td:nth-child(1 ){
+	background:rgba(221,221,107,0.4);
+}
+
+table td:nth-child(1) {
+	max-width: 250px;
+}
+
+table td:nth-child(2) {
+	max-width: 250px;
+}
+
+table tr:nth-child(even) td {
+	background:rgba(0,0,0,0.2);
+}
+table tr:nth-child(even) td:nth-child(1) {
+	background:rgba(170,170,82,0.4);
+}
+
+table tr:nth-last-child(1) td:nth-child(1) {
+	border-radius: 3px 3px 3px 20px;
+	/*padding-left: 25px;*/
+}
+
+table tr:nth-last-child(1) td:nth-last-child(1) {
+	border-radius: 3px 3px 20px 3px;
+	/*padding-right: 25px;*/
+}
+
+/* img */
+img {
+	border-style: none;
+}
+
+#img_wrap {
+	display: inline-block;
+	position: relative;
+}
+
+#rescaled_img_wrap {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#original_img {
+	display: none;
+}
+
+#rescaled_img {
+	width: 100%;
+	height: 100%;
+}
+
+img.logo {
+	display: block;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}

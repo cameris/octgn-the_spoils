@@ -23,7 +23,7 @@ phases = [
 
 ActivateColor = "#ffffff"
 AttackColor = "#ff0000"
-NotSOTColor = "#ff8800"
+NSOTColor = "#ff8800"
 BlockColor = "#0000ff"
 DoesntUntapColor ="ffff00"
 
@@ -167,7 +167,7 @@ def clearAll(group, x = 0, y = 0):
 # Table card actions
 #---------------------------------------------------------------------------
 
-def default_action(cards, x = 0, y = 0):
+def default_action(cards, x = 0, y = 0): # {{{
 	mute()
 	non_res = list(card for card in cards if card.type.lower() != 'resource' and card.isFaceUp == True)
 	resources = list(card for card in cards if card.type.lower() == 'resource' or card.isFaceUp == False)
@@ -175,8 +175,9 @@ def default_action(cards, x = 0, y = 0):
 		deplete(non_res)
 	if len(resources):
 		attach_to_faction(resources)
+	# }}}
 
-def deplete(cards, x = 0, y = 0):
+def deplete(cards, x = 0, y = 0): # {{{
 	mute()
 	global factionid
 
@@ -188,8 +189,9 @@ def deplete(cards, x = 0, y = 0):
 			card.highlight = None
 			notify('{} restores {}'.format(me, card))
 	reposition_cards(me)
+	# }}}
 
-def attach_to_faction(cards, x = 0, y = 0):
+def attach_to_faction(cards, x = 0, y = 0): # {{{
 	mute()
 	global factionid
 	
@@ -211,18 +213,20 @@ def attach_to_faction(cards, x = 0, y = 0):
 			notify('{} attaches {} to Faction'.format(me, card))
 		setGlobalVariable("attached", str(attached))
 	reposition_cards(me)
+	# }}}
 
-def use_ability(card, x = 0, y = 0):
+def use_ability(card, x = 0, y = 0): # {{{
 	trigger_response(me, card, 'ability')
-	attached = eval(getGlobalVariable("attached"))
+	# }}}
 
-def attack(cards, x = 0, y = 0):
+def attack(cards, x = 0, y = 0): # {{{
 	mute()
 	for card in cards:
 		card.orientation |= Rot90
 		card.highlight = AttackColor
 		notify('{} attacks with {}'.format(me, card))
 	reposition_cards(me)
+	# }}}
 
 def block(card, x = 0, y = 0):
 	card.highlight = BlockColor
@@ -246,9 +250,11 @@ def removeredcounter(card, x = 0, y = 0):
 	notify("{} removes a token to {}.".format(me, card))
 	card.markers[RedMarker] -= 1
 
-def flip_up(card, x = 0, y = 0):
+def flip_up(card, x = 0, y = 0): # {{{
 	mute()
 	global factionid
+	global inplay_since_SOT
+
 	if card.isFaceUp:
 		card.isFaceUp = False
 		notify("{} flips down {}.".format(me, card))
@@ -256,13 +262,18 @@ def flip_up(card, x = 0, y = 0):
 		reposition_cards(me)
 	else:
 		attached = eval(getGlobalVariable("attached"))
+		# remove from faction attached list
 		if card._id in attached.get(factionid,[]):
 			attached[factionid].remove(card._id)
 			setGlobalVariable("attached", str(attached))
+		# remove from inplay list
+		if inplay_since_SOT.count(card._id):
+			inplay_since_SOT.remove(card._id)
 
 		card.isFaceUp = True
 		notify("{} flips up {}.".format(me, card))
 		trigger_response(me, card, 'play')
+	# }}}
 
 def reveal(card, x = 0, y = 0):
 	mute()
@@ -405,9 +416,20 @@ def randomdraw(group):
 	notify("{} randomly draws a card.".format(me))
 	card.moveTo(me.hand)
 
-# TESTING
-
+#------------------------------------------------------------------------------
 # Events
+#------------------------------------------------------------------------------
+
+def on_move_card(player, card, fromgrp, togrp, oldindex, newindex, oldx, oldy, newx, newy, isscripted): # {{{
+	global inplay_since_SOT
+	if player == me:
+		if fromgrp == table and togrp != table:
+			attached = eval(getGlobalVariable("attached"))
+			update_attached(attached)
+			# remove from inplay list
+			if inplay_since_SOT.count(card._id):
+				inplay_since_SOT.remove(card._id)
+	# }}}
 
 def on_table_load(): # {{{
 	# check for changed version
@@ -499,7 +521,7 @@ def on_load_deck(player, groups): # {{{
 def on_glob_var_change(name, oldval, newval): # {{{
 	mute()
 	# response system
-	# stack: [{ 'pid': playerid, 'cid': cardid, 'action': action, 'done': { playerid: bool, ... }}, ... ]
+	# stack: [{ 'pid': playerid, 'cid': cardid, 'did': dupeid, 'action': action, 'done': { playerid: bool, ... }}, ... ]
 	# 	action:
 	# 		'play' = playing a card
 	# 		'ability' = using an ability
@@ -635,7 +657,9 @@ def answer_no(group, x = 0, y = 0): # {{{
 		notify("CONTINUE: {} ready to continue".format(me))
 	# }}}
 
+#------------------------------------------------------------------------------
 # Game settings
+#------------------------------------------------------------------------------
 
 def change_seating_order(group, x=0, y=0): # {{{
 	allplayers = list(p for p in players)
@@ -789,7 +813,9 @@ def change_res_attach(group, x=0, y=0): # {{{
 	reposition_cards(me)
 	# }}}
 
+#------------------------------------------------------------------------------
 # Response
+#------------------------------------------------------------------------------
 
 def trigger_response(player, card, action): # {{{
 	mute()
@@ -871,7 +897,9 @@ def end_response(group, x=0, y=0): # {{{
 	setGlobalVariable("response_stack", str([]))
 	# }}}
 
+#------------------------------------------------------------------------------
 # Getters
+#------------------------------------------------------------------------------
 
 def get_layout(player): # {{{
 	layout = getGlobalVariable("layout_" + str(player._id))
@@ -907,6 +935,11 @@ def get_next_player(curplayer, order): # {{{
 		index += 1
 	return Player(order[index]) # }}}
 
+def get_cards_on_stack(stack): # {{{
+	ids_on_stack = list(item['cid'] for item in stack if item['action'] == 'play')
+	ids_on_stack.extend(list(item['did'] for item in stack if item['action'] == 'ability'))
+	return ids_on_stack # }}}
+
 def has_oog_marker(card): # {{{
 	oog_marker = False
 	for marker in card.markers:
@@ -914,14 +947,16 @@ def has_oog_marker(card): # {{{
 			oog_marker = True
 	return oog_marker # }}}
 
+#------------------------------------------------------------------------------
 # Layout and placement
+#------------------------------------------------------------------------------
 
 def attach(card, x=0, y=0): # {{{
 	attached = eval(getGlobalVariable("attached"))
 
 	# get being played card ids
 	being_played = eval(getGlobalVariable("response_stack"))
-	being_played = list(item['cid'] for item in being_played if item['action'] == 'play')
+	being_played = get_cards_on_stack(being_played)
 	
 	# check if card is already attached to something, remove it from list
 	for ids in attached.itervalues():
@@ -1024,7 +1059,7 @@ def reposition_cards(player): # {{{
 
 	# get being played card ids
 	being_played = eval(getGlobalVariable("response_stack"))
-	being_played = list(item['cid'] for item in being_played if item['action'] == 'play')
+	being_played = get_cards_on_stack(being_played)
 
 
 	active_players = eval(getGlobalVariable("seating_order"))
@@ -1077,7 +1112,7 @@ def move_cards(cardlist): # {{{
 			for cid, x, y in cardlist:
 				card = Card(cid)
 				if not cid in inplay_since_SOT:
-					card.highlight = NotSOTColor
+					card.highlight = NSOTColor
 				#if Card(cid).position != (x, y):
 					#Card(cid).moveToTable(x, y)
 				card.moveToTable(x, y)

@@ -2,8 +2,8 @@
 <game 
 	name="The Spoils" 
 	id="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88" 
-	octgnVersion="3.1.17.100" 
-	version="1.4.1.0" 
+	octgnVersion="3.1.109.244" 
+	version="1.4.2.0" 
 	markersize="16" 
 	tags="game octgn The Spoils best game ever" 
 	description="The Spoils is perhaps the best CCG ever conceived. 
@@ -28,6 +28,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 	<event name="OnTableLoad" action="on_table_load" />
 	<event name="OnGameStart" action="on_game_start" />
 	<event name="OnLoadDeck" action="on_load_deck" />
+	<event name="OnMoveCard" action="on_move_card" />
 	<event name="OnGlobalVariableChanged" action="on_glob_var_change" />
 	<event name="OnTurn" action="on_turn" />
 	<event name="OnTurn" action="on_turn" />

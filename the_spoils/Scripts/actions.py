@@ -432,7 +432,9 @@ def on_move_card(player, card, fromgrp, togrp, oldindex, newindex, oldx, oldy, n
 	# }}}
 
 def on_table_load(): # {{{
-	# check for changed version
+	mute()
+
+	# check for changed layout version
 	layout_version = getSetting("layout_version", "0.0")
 	if layout_version != CURRENT_LAYOUT_VERSION:
 		whisper("LAYOUT: new layout version detected, defaults loaded")
@@ -440,6 +442,25 @@ def on_table_load(): # {{{
 		setSetting("layout", DEFAULT_LAYOUT)
 		setSetting("layout_spacer", DEFAULT_LAYOUT_SPACER)
 		setSetting("layout_res_attach_left", DEFAULT_LAYOUT_RES_ATTACH_LEFT)
+	
+	# check for changes in game version
+	# sorting key function for version string
+	def version_tuple(v):
+		return tuple(map(int, (v.split("."))))
+
+	# display last version for new players
+	default_version = map(int, (gameVersion.split(".")))
+	default_version[-1] = default_version[-1] -1
+	default_version = ".".join(str(i) for i in default_version)
+
+	last_game_version = getSetting("last_game_version", default_version)
+	versions = sorted(changelog.keys(), key=version_tuple)
+	for ver in versions:
+		if version_tuple(last_game_version) < version_tuple(ver):
+			log = changelog[ver]
+			log = '\n\n>>> '.join(log)
+			confirm("Changes in {}:\n>>> {}".format(ver, log))
+	setSetting("last_game_version", gameVersion)
 
 	# set layout
 	layout = eval(getSetting("layout", DEFAULT_LAYOUT))

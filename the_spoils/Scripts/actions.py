@@ -448,18 +448,15 @@ def on_table_load(): # {{{
 	def version_tuple(v):
 		return tuple(map(int, (v.split("."))))
 
-	# display last version for new players
-	default_version = map(int, (gameVersion.split(".")))
-	default_version[-1] = default_version[-1] -1
-	default_version = ".".join(str(i) for i in default_version)
-
-	last_game_version = getSetting("last_game_version", default_version)
+	last_game_version = getSetting("last_game_version", "0")
 	versions = sorted(changelog.keys(), key=version_tuple)
 	for ver in versions:
 		if version_tuple(last_game_version) < version_tuple(ver):
 			log = changelog[ver]
 			log = '\n\n>>> '.join(log)
-			confirm("Changes in {}:\n>>> {}".format(ver, log))
+			choice = confirm("Changes in {}:\n>>> {}\n\nShow next log?".format(ver, log))
+			if choice == False:
+				break
 	setSetting("last_game_version", gameVersion)
 
 	# set layout

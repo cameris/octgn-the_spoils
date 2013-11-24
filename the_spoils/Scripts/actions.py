@@ -480,10 +480,10 @@ def on_game_start(): # {{{
 	if me._id == 1: # host decides
 		active_players = getGlobalVariable("seating_order")
 		if not active_players:
-			if len(players) > 2:
+			if len(getPlayers()) > 2:
 				change_seating_order(table)
 			else:
-				setGlobalVariable("seating_order", str(list(p._id for p in players)) )
+				setGlobalVariable("seating_order", str(list(p._id for p in getPlayers())) )
 	# }}}
 
 def on_load_deck(player, groups): # {{{
@@ -680,7 +680,7 @@ def answer_no(group, x = 0, y = 0): # {{{
 #------------------------------------------------------------------------------
 
 def change_seating_order(group, x=0, y=0): # {{{
-	allplayers = list(p for p in players)
+	allplayers = list(p for p in getPlayers())
 	seating_order = []
 
 	title = "Add an active player:"
@@ -896,7 +896,7 @@ def trigger_response(player, card, action): # {{{
 		done = {}
 
 		# playing alone?
-		if len(players) > 1:
+		if len(getPlayers()) > 1:
 			for pid in resp_players:
 				done[pid] = False
 		else:

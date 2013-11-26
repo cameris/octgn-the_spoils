@@ -1110,26 +1110,30 @@ def reposition_cards(player): # {{{
 	sign = -1 if player.hasInvertedTable() else 1
 	start_x = -1 * ( (sum(player_width.values()) + (len(player_width)-1) * PLAYER_SPACER)/2 )
 
-	for playerid in player_width.keys():
+	# transform to global coords
+	controlled_cards = {}
+	index = 0
+	for pid in player_width.keys():
 		if not player.hasInvertedTable():
-			start_x += player_width[playerid]
+			start_x += player_width[pid]
 
-		args = []
-		for card, x, y in player_cards[playerid]:
+		for card, x, y in player_cards[pid]:
 			new_x = start_x + x
 			new_y = sign * INITIAL_ROW_OFFSET + y
-			args.append( [card._id, new_x, new_y] )
-	
-		if player_cards[playerid]:
-			if playerid != me._id:
-				remoteCall(Player(playerid),"move_cards",[str(args)])
-			else:
-				move_cards(args)
+			controlled_cards.setdefault(card.controller._id, []).append( [card._id, index, new_x, new_y] )
+			index = index + 1
 
 		if player.hasInvertedTable():
-			start_x += player_width[playerid]
+			start_x += player_width[pid]
 
 		start_x += PLAYER_SPACER
+
+	# move the cards
+	for pid in controlled_cards.keys():
+		if pid == me._id:
+			move_cards(controlled_cards[pid])
+		else:
+			remoteCall(Player(pid), "move_cards", [ str(controlled_cards[pid]) ])
 	# }}}
 
 def move_cards(cardlist): # {{{
@@ -1138,13 +1142,12 @@ def move_cards(cardlist): # {{{
 		if type(cardlist) == type(str()):
 			cardlist = eval(cardlist)
 		if cardlist:
-			for cid, x, y in cardlist:
+			for cid, index, x, y in cardlist:
 				card = Card(cid)
 				if not cid in inplay_since_SOT:
 					card.highlight = NSOTColor
-				#if Card(cid).position != (x, y):
-					#Card(cid).moveToTable(x, y)
 				card.moveToTable(x, y)
+				card.setIndex(index)
 	# }}}
 
 def categorize_cards(player, group, attached, being_played): # {{{

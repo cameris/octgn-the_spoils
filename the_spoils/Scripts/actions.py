@@ -355,18 +355,18 @@ def randomDiscard(group):
 	mute()
 	card = group.random()
 	if card == None: return
-	notify("{} randomly discards a card.".format(me))
 	card.moveTo(me.piles['Discard pile'])
+	notify("{} randomly discards a card.".format(me))
 
 def discard(card, x = 0, y = 0):
 	mute()
-	notify("{} discards {} from their hand.".format(me, card))
 	card.moveTo(me.piles['Discard pile'])
+	notify("{} discards {} from their hand.".format(me, card))
 
 def removefromgame(card, x = 0, y = 0):
 	mute()
-	notify("{} removes {} from game.".format(me, card))
 	card.moveTo(me.piles['out of game'])
+	notify("{} removes {} from game.".format(me, card))
 
 def playresource(card, x = 0, y = 0):
 	mute()

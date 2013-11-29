@@ -356,7 +356,7 @@ def randomDiscard(group):
 	card = group.random()
 	if card == None: return
 	card.moveTo(me.piles['Discard pile'])
-	notify("{} randomly discards a card.".format(me))
+	notify("{} randomly discards {}.".format(me, card))
 
 def discard(card, x = 0, y = 0):
 	mute()

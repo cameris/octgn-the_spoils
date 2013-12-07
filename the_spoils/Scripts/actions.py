@@ -80,16 +80,29 @@ def scoop(group, x = 0, y = 0):
 	notify("{} scoops.".format(me))
 
 def showCurrentPhase(group, x = 0, y = 0):
-	notify(phases[phaseIdx].format(me))
+	if me.isActivePlayer:
+		notify(phases[phaseIdx].format(me))
+	else:
+		active_players = eval(getGlobalVariable("seating_order"))
+		for pid in active_players:
+			if Player(pid).isActivePlayer:
+				remoteCall(Player(pid), "showCurrentPhase", [table])
 
 def nextPhase(group, x = 0, y = 0):
+	#TODO: maybe remove this function, since spoils has no ordered gameflow?
 	global phaseIdx
+	if not confirm_my_turn():
+		return
+
 	phaseIdx += 1
 	showCurrentPhase(group)
 
 def goToRestore(group, x = 0, y = 0):
 	global phaseIdx
 	global factionid
+	if not confirm_my_turn():
+		return
+
 	phaseIdx = 1
 	mute()
 	myCards = (card for card in table
@@ -109,28 +122,39 @@ def goToRestore(group, x = 0, y = 0):
 
 def goToDevelopment(group, x = 0, y = 0):
 	global phaseIdx
+	if not confirm_my_turn():
+		return
+	 
 	phaseIdx = 2
 	showCurrentPhase(group)
 
 def goToAttack(group, x = 0, y = 0):
 	global phaseIdx
+	if not confirm_my_turn():
+		return
+
 	phaseIdx = 3
 	showCurrentPhase(group)
 
 def goToResolve(group, x = 0, y = 0):
 	global phaseIdx
+	if not confirm_my_turn():
+		return
+
 	phaseIdx = 7
 	showCurrentPhase(group)
 
 def goToEnd(group, x = 0, y = 0):
 	global phaseIdx
-	if me.isActivePlayer:
-		declared_eot = eval(getGlobalVariable("response_stack"))
-		declared_eot = list(item for item in declared_eot if item['action'] == 'eot')
-		if not declared_eot:
-			phaseIdx = 13
-			showCurrentPhase(group)
-			trigger_response(me, None, 'eot')
+	if not confirm_my_turn():
+		return
+
+	declared_eot = eval(getGlobalVariable("response_stack"))
+	declared_eot = list(item for item in declared_eot if item['action'] == 'eot')
+	if not declared_eot:
+		phaseIdx = 13
+		showCurrentPhase(group)
+		trigger_response(me, None, 'eot')
 
 def roll6(group, x = 0, y = 0):
 	mute()
@@ -686,6 +710,11 @@ def answer_no(group, x = 0, y = 0): # {{{
 		notify("CONTINUE: {} ready to continue".format(me))
 	# }}}
 
+def confirm_my_turn(): # {{{
+	if me.isActivePlayer:
+		return True
+	return confirm("It's not your turn, still want to contine?") # }}}
+
 #------------------------------------------------------------------------------
 # Game settings
 #------------------------------------------------------------------------------
@@ -855,6 +884,10 @@ def trigger_response(player, card, action): # {{{
 	facedown = False
 
 	if stack:
+		if stack[-1]['pid'] == player._id:
+			confirm("It's not your time to respond!")
+			return
+
 		# calc coordinates and move card
 		if action == 'play' or action == 'ability':
 			being_played = list(item for item in stack if item['action'] == 'play' or item['action'] == 'ability')
@@ -898,25 +931,21 @@ def trigger_response(player, card, action): # {{{
 			notify("{} uses {}'s ability from their {}".format(me, dupe, card.group.name))
 
 
-	if stack and stack[-1]['pid'] == player._id:
-		whisper("RESPONSE: it's not your time to respond, please undo your action")
+	# players that can respond
+	resp_players = list(pid for pid in active_players if pid != player._id)
+	done = {}
 
+	# playing alone?
+	if len(getPlayers()) > 1:
+		for pid in resp_players:
+			done[pid] = False
 	else:
-		# players that can respond
-		resp_players = list(pid for pid in active_players if pid != player._id)
-		done = {}
+		done[player._id] = True
 
-		# playing alone?
-		if len(getPlayers()) > 1:
-			for pid in resp_players:
-				done[pid] = False
-		else:
-			done[player._id] = True
-
-		# push to stack
-		stack.append({'pid': player._id, 'cid': (card._id if card else None),
-			'action': action, 'done': done, 'did': (dupe._id if dupe else None), 'fd': facedown })
-		setGlobalVariable("response_stack", str(stack))
+	# push to stack
+	stack.append({'pid': player._id, 'cid': (card._id if card else None),
+		'action': action, 'done': done, 'did': (dupe._id if dupe else None), 'fd': facedown })
+	setGlobalVariable("response_stack", str(stack))
 	# }}}
 
 def end_response(group, x=0, y=0): # {{{

@@ -3,7 +3,7 @@
 	name="The Spoils" 
 	id="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88" 
 	octgnVersion="3.1.111.250" 
-	version="1.4.3.3" 
+	version="1.4.3.4" 
 	markersize="16" 
 	tags="game octgn The Spoils best game ever" 
 	description="The Spoils is perhaps the best CCG ever conceived. 
@@ -71,7 +71,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 
 <table name="Table" visibility="undefined" ordered="False" width="700" height="500" board="board/sky.jpg" boardPosition="0,0,0,0" background="board/sky.jpg" backgroundStyle="stretch">
 
-	<cardaction menu="Use Ability (Tab+LeftClick)" shortcut="ctrl+E" execute="use_ability" />
+	<cardaction menu="Use Ability (Tab+LeftClick)" shortcut="ctrl+E" batchExecute="use_ability" />
 	<cardaction menu="Deplete/Restore|Attach/Detach Resource" default="True" batchExecute="default_action" />
 	<cardaction menu="Attach/Detach Resource to/from Faction" shortcut="F7" batchExecute="attach_to_faction" />
 	<cardaction menu="Deplete/Restore" shortcut="F8" batchExecute="deplete" />
@@ -83,7 +83,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 	<cardaction menu="Add Token" shortcut="ctrl+1" execute="addredcounter" />
 	<cardaction menu="Remove Token" shortcut="ctrl+2" execute="removeredcounter" />
 	<cardactions menu="Facedown Card..." >
-		<cardaction menu="Flip Up / Flip Down" shortcut="ctrl+F" execute="flip_up" />
+		<cardaction menu="Flip Up / Flip Down" shortcut="ctrl+F" batchExecute="flip_up" />
 		<cardaction menu="Reveal / Hide" shortcut="alt+F" execute="reveal" />
 	</cardactions>
 	<cardactions menu="Move to..." >
@@ -112,7 +112,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 		<groupaction menu="END turn" shortcut="F5" execute="goToEnd" />
 		<groupaction menu="Display Current Phase" shortcut="ctrl+shift+n" execute="showCurrentPhase" />
 		<groupaction menu="Next Phase" shortcut="ctrl+n" execute="nextPhase" />
-		<groupaction menu="End Response" execute="end_response" />
+		<groupaction menu="Reset Response Stack" execute="end_response" />
 	</groupactions>
 	<groupactions menu="Game Settings">
 		<groupaction menu="Layout" execute="change_layout" />

@@ -239,7 +239,11 @@ def attach_to_faction(cards, x = 0, y = 0): # {{{
 	reposition_cards(me)
 	# }}}
 
-def use_ability(card, x = 0, y = 0): # {{{
+def use_ability(cards, x = 0, y = 0): # {{{
+	if len(cards) > 1:
+		whisper("multiple cards selected, \"use ability\" only works on single cards")
+		return
+	card = cards[0]
 	trigger_response(me, card, 'ability')
 	# }}}
 
@@ -274,13 +278,19 @@ def removeredcounter(card, x = 0, y = 0):
 	notify("{} removes a token to {}.".format(me, card))
 	card.markers[RedMarker] -= 1
 
-def flip_up(card, x = 0, y = 0): # {{{
+def flip_up(cards, x = 0, y = 0): # {{{
 	mute()
 	global factionid
 	global inplay_since_SOT
 
+	if len(cards) > 1:
+		whisper("multiple cards selected, \"flip up/down\" only works on single cards")
+		return
+	card = cards[0]
+
 	if card.isFaceUp:
 		card.isFaceUp = False
+		card.orientation = Rot0
 		notify("{} flips down {}.".format(me, card))
 		card.peek()
 		reposition_cards(me)

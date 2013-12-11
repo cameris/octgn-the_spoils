@@ -335,8 +335,8 @@ def destroy(card, x = 0, y = 0):
 	mute()
 	src = card.group
 	fromText = " from play" if src == table else " from their " + src.name
-	card.moveTo(card.owner.piles['Discard pile'])
 	notify("{} destroys {}{}.".format(me, card, fromText))
+	card.moveTo(card.owner.piles['Discard pile'])
 
 def removefromgame(card, x = 0, y = 0):
 	mute()
@@ -346,8 +346,8 @@ def removefromgame(card, x = 0, y = 0):
 def movetodrawdeck(card, x = 0, y = 0):
 	mute()
 	if card.owner == me:
-		card.moveTo(me.piles['draw deck'])
 		notify("{} moves {} to top of draw deck.".format(me, card))
+		card.moveTo(me.piles['draw deck'])
 	else:
 		whisper("You do not own {}".format(card))
 
@@ -356,16 +356,16 @@ def tohand(card, x = 0, y = 0):
 	if card.owner == me:
 		src = card.group
 		fromText = " from the table" if src == table else " from their " + src.name
-		card.moveTo(me.hand)
 		notify("{} returns {} to their hand{}.".format(me, card, fromText))
+		card.moveTo(me.hand)
 	else:
 		whisper("You do not own {}".format(card))
 
 def movetobottom(card, x = 0, y = 0):
 	mute()
 	if card.owner == me:
-		card.moveToBottom(me.piles['draw deck'])
 		notify("{} moves {} to bottom of draw deck.".format(me, card))
+		card.moveToBottom(me.piles['draw deck'])
 	else:
 		whisper("You do not own {}".format(card))
 

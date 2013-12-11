@@ -357,7 +357,7 @@ def tohand(card, x = 0, y = 0):
 		src = card.group
 		fromText = " from the table" if src == table else " from their " + src.name
 		card.moveTo(me.hand)
-		notify("{} returns {} to their hand{}.".format(me, card.name, fromText))
+		notify("{} returns {} to their hand{}.".format(me, card, fromText))
 	else:
 		whisper("You do not own {}".format(card))
 

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000011">Rage</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005180220">Blazing Shriever</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005183220">Colossal Flattener</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005184220">Courageous Paladin</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005188220">Enduring Swordsman</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005189220">Essence of Rage</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005190220">Fervent Beastslayer</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005191220">Frenzied Shriever</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005192220">Gallant Commander</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005194220">Godwing Thunderhoof</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005195220">Heavy Sword</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005196220">Heroic Deed</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005197220">Idol Smasher</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005198220">Impressive Hero</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005199220">Improvised Blowtorch</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005200220">Lordly Stables</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005201220">Manful Skirmish</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005204220">Nimble Conscript</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005206220">Perforate</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005208220">Proficient Battler</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005209220">Righteous Exemplar</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005210220">Robustical Badass</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005211220">Seraphim Magic</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005213220">Tiny Sarume</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005215220">Unflinching Bowman</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005216220">Unstoppable Asskicker</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005219220">Virtuous Razer</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000016">Hall of Great Justice</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000011">Rage</card>
+  </section>
+</deck>

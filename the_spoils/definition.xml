@@ -3,7 +3,7 @@
 	name="The Spoils" 
 	id="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88" 
 	octgnVersion="3.1.111.250" 
-	version="1.4.3.4" 
+	version="1.4.4.0" 
 	markersize="16" 
 	tags="game octgn The Spoils best game ever" 
 	description="The Spoils is perhaps the best CCG ever conceived. 
@@ -79,10 +79,15 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 	<cardaction menu="Block" shortcut="ctrl+B" execute="block" />
 	<cardaction menu="Attach/Detach" shortcut="ctrl+Q" execute="attach" />
 	<cardaction menu="Clear Card" shortcut="esc" execute="clear" />
-	<cardaction menu="Add Tokens/Markers..." shortcut="ctrl+M" batchExecute="addmarker" />
-	<cardaction menu="Add Token" shortcut="ctrl+1" execute="addredcounter" />
-	<cardaction menu="Remove Token" shortcut="ctrl+2" execute="removeredcounter" />
-	<cardactions menu="Facedown Card..." >
+	<cardactions menu="Tokens/Markers..." >
+		<cardaction menu="Add Token" shortcut="ctrl+1" execute="add_token" />
+		<cardaction menu="Remove Token" shortcut="ctrl+2" execute="remove_token" />
+		<cardaction menu="Add Location Damage" shortcut="ctrl+3" execute="add_loc_dmg" />
+		<cardaction menu="Remove Location Damage" shortcut="ctrl+4" execute="remove_loc_dmg" />
+		<cardaction menu="Toggle Don't Restore" shortcut="ctrl+5" execute="toggle_dont_restore" />
+		<cardaction menu="Add Tokens/Markers..." shortcut="ctrl+M" batchExecute="add_marker" />
+	</cardactions>
+	<cardactions menu="Flip Card..." >
 		<cardaction menu="Flip Up / Flip Down" shortcut="ctrl+F" batchExecute="flip_up" />
 		<cardaction menu="Reveal / Hide" shortcut="alt+F" execute="reveal" />
 	</cardactions>
@@ -159,7 +164,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 
 </group>
 
-<group name="Discard pile" shortcut="del" visibility="all" width="63" height="88" icon="groups/graveyard.png" >
+<group name="Discard pile" shortcut="del" visibility="all" width="63" height="88" icon="groups/discard.png" >
 
 	<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle2" />
 	<groupaction menu="Randomly draw a Card" execute="randomdraw" />
@@ -168,7 +173,7 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 
 </group>
 
-<group name="Out of game" shortcut="ctrl+X" visibility="all" width="63" height="88" icon="groups/trash.png" collapsed="True">
+<group name="Out of game" shortcut="ctrl+X" visibility="all" width="63" height="88" icon="groups/oog.png" collapsed="True">
 
 	<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
 

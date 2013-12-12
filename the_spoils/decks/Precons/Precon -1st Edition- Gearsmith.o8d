@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000009">Elitism</card>
+    <card qty="3" id="7e9610d4-c06d-437d-a5e6-000003122220">Research Assistant</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003132220">TigerKaiser</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003093220">633fy 31f</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003108220">Legacy Warmachine</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003094220">700160x 31f</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003114220">Manifold Quasi-Modal Steamwork</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003128220">Securitymajig</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003092220">3p1ph4ny 31f</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003134220">Towering Researchmajig</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003091220">1337!</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003121220">Precise Sabotage</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003115220">Meager Research</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003098220">Devastating Mockery</card>
+    <card qty="3" id="7e9610d4-c06d-437d-a5e6-000003129220">Slingerang</card>
+    <card qty="3" id="7e9610d4-c06d-437d-a5e6-000003110220">Luteoderm Armor</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003106220">Jacque's Trap</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003101220">Hidden Sandwich</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003135220">Tri-Pole Magnet</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003125220">Runic Cannon</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000006">The Tournament Faction</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000009">Elitism</card>
+  </section>
+</deck>

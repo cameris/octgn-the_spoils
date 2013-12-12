@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000010">Deception</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005133220">Affectionate Dollkeeper</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005134220">Agile Highwayman</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005137220">Casino Kingpin</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005139220">Cunning Disguise</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005140220">Dauntless Gambler</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005142220">Essence of Deception</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005144220">Flimflam Man</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005146220">Guttersnipe</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005147220">Harbinger of Anguish</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005150220">Hidden Dagger</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005152220">Hypnotic Illusionist</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005155220">Maxwell Cockswagger</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005158220">Obtuse Pipesmoker</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005159220">Opportune Slotpuller</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005160220">Overindulge</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005163220">Pit Boss</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005164220">Rigged Tables</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005165220">Roulette Wheel of DOOM!</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005166220">Rumply Ruse</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005167220">Shadowy Mugger</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005168220">Slinking Bandido</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005169220">Sly Bilker</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005170220">Strangulate</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005172220">Swollen Ostrich</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005174220">Transient Smuggler</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005176220">Underhanded Gamer</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000015">Drowned Catacombs</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000010">Deception</card>
+  </section>
+</deck>

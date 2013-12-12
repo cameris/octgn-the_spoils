@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <blocks>
+  	<block type="text" id="costu">
+      <location x="45" y="28" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+    <block type="text" id="threshold">
+      <location x="31" y="60" />
+      <text color="#000000" size="20" />
+      <border color="#FFFFFF" size="9" />
+      <wordwrap height="18" width="316" />
+    </block>
+    <block type="text" id="title">
+      <location x="70" y="28" />
+      <text color="#000000" size="25" />
+      <border color="#000000" size="1" />
+      <wordwrap height="28" width="218" valign="center" shrinktofit="True" />
+    </block>
+    <block type="text" id="type">
+      <location x="37" y="145" />
+      <text color="#000000" size="22" />
+      <border color="#000000" size="0" />
+      <wordwrap height="18" width="298"  align="center" valign="center" shrinktofit="True" />
+    </block>
+    <block type="text" id="rules">
+      <location x="45" y="170" />
+      <text color="#000000" size="18" />
+      <wordwrap height="325" width="285" shrinktofit="True" />
+    </block>
+	<block type="text" id="rulesb">
+      <location x="47" y="180" />
+      <text color="#000000" size="18" />
+      <wordwrap height="315" width="285" shrinktofit="True" />
+    </block>
+	<block type="text" id="rulesg">
+      <location x="47" y="174" />
+      <text color="#000000" size="18" />
+      <wordwrap height="315" width="285" shrinktofit="True" />
+    </block>
+	<block type="text" id="rarity">
+      <location x="150" y="488" />
+      <text color="#000000" size="14" />
+      <wordwrap height="315" width="285" shrinktofit="True" />
+    </block>
+<!-- Arcanist Stats-->
+    <block type="text" id="costa">
+      <location x="35" y="30" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+	
+    <block type="text" id="stra">
+      <location x="294" y="15" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="lfea">
+      <location x="325" y="25" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="spda">
+      <location x="302" y="46" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+<!-- Banker Stats-->	
+	<block type="text" id="costb">
+      <location x="25" y="25" />
+      <text color="#000000" size="18" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+	
+	 <block type="text" id="strb">
+      <location x="306" y="12" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="lfeb">
+      <location x="334" y="30" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="spdb">
+      <location x="305" y="45" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+<!-- Gearsmith Stats-->	
+	<block type="text" id="costg">
+      <location x="33" y="29" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+	
+	<block type="text" id="strg">
+      <location x="297" y="9" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="lfeg">
+      <location x="333" y="32" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="spdg">
+      <location x="299" y="50" />
+      <text color="#000000" size="21" />
+      <border color="#000000" size="2" />
+    </block>
+<!-- Rogue Stats-->
+	<block type="text" id="costr">
+      <location x="45" y="28" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+	
+	<block type="text" id="strr">
+      <location x="294" y="8" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="lfer">
+      <location x="335" y="19" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="spdr">
+      <location x="305" y="45" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+<!-- Warlord Stats-->	
+	<block type="text" id="costw">
+      <location x="28" y="25" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="18" width="316" />
+    </block>
+	
+	<block type="text" id="strw">
+      <location x="294" y="6" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="lfew">
+      <location x="332" y="15" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+	<block type="text" id="spdw">
+      <location x="306" y="44" />
+      <text color="#000000" size="23" />
+      <border color="#000000" size="2" />
+    </block>
+
+<!-- Structure-->
+
+	<block type="text" id="structure">
+      <location x="314" y="24" />
+      <text color="#000000" size="30" />
+      <border color="#000000" size="2" />
+    </block>
+
+<!-- Resources -->
+
+
+    <block type="text" id="r-type">
+      <location x="145" y="500" rotate="270" />
+      <text color="#000000" size="15" />
+      <border color="#000000" size="0" />
+      <wordwrap height="18" width="490" align="center"/>
+    </block>
+    <block type="text" id="r-rules">
+      <location x="165" y="490" rotate="270" />
+      <text color="#000000" size="18" />
+      <wordwrap height="200" width="460" align="center" shrinktofit="True"/>
+    </block>
+
+<!-- Special Titles Resources -->
+
+    <block type="text" id="r-titlea">
+      <location x="19" y="333" rotate="270" />
+      <text color="#000000" size="17" />
+      <border color="#000000" size="1" />
+      <wordwrap height="35" width="147" align="center" valign="center" shrinktofit="True"/>
+    </block>
+
+    <block type="text" id="r-titleb">
+      <location x="32" y="333" rotate="270" />
+      <text color="#000000" size="16"  />
+      <border color="#000000" size="1" />
+      <wordwrap height="35" width="147" align="center" valign="center" shrinktofit="True"/>
+    </block>
+
+    <block type="text" id="r-titleg">
+      <location x="14" y="333" rotate="270" />
+      <text color="#000000" size="17"  />
+      <border color="#000000" size="1" />
+      <wordwrap height="35" width="147" align="center" valign="center" shrinktofit="True"/>
+    </block>
+
+    <block type="text" id="r-titler">
+      <location x="16" y="333" rotate="270" />
+      <text color="#000000" size="19" />
+      <border color="#000000" size="1" />
+      <wordwrap height="35" width="147" align="center" valign="center" shrinktofit="True"/>
+    </block>
+
+    <block type="text" id="r-titlew">
+      <location x="22" y="333" rotate="270" />
+      <text color="#000000" size="16"  />
+      <border color="#000000" size="1" />
+      <wordwrap height="35" width="147" align="center" valign="center" shrinktofit="True"/>
+    </block>
+  </blocks>
+
+
+<!-- MONO COLORS -->
+
+<template src="proxy/back/a-c.jpg" >
+    <matches> <match name="Trade" value="Arcanist" /> <match name="Type" value="Character" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costa"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link>
+	<link block="stra"> <property name="Strength" /> </link><link block="lfea"> <property name="Life" /> </link><link block="spda"> <property name="Speed" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/a-l.jpg" >
+    <matches> <match name="Trade" value="Arcanist" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costa"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rules"> <property name="Card Text" /> </link>
+	 <link block="structure"> <property name="Structure" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/a-sr.jpg" >
+    <matches> <match name="Trade" value="Arcanist" /> <match name="Type" value="Resource" /> <match name="Subtype" value="Staple" /> </matches>
+</template>
+<template src="proxy/back/a-r.jpg" >
+    <matches> <match name="Trade" value="Arcanist" /> <match name="Type" value="Resource" /> </matches>
+    <textblocks>
+	<link block="r-titlea"> <property name="Name" /> </link> 
+	<link block="r-type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="r-rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/a.jpg" >
+    <matches> <match name="Trade" value="Arcanist" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costa"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+
+<template src="proxy/back/b-c.jpg" >
+    <matches> <match name="Trade" value="Banker" /> <match name="Type" value="Character" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costb"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rulesb"> <property name="Card Text" /> </link>
+	<link block="strb"> <property name="Strength" /> </link><link block="lfeb"> <property name="Life" /> </link><link block="spdb"> <property name="Speed" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/b-l.jpg" >
+    <matches> <match name="Trade" value="Banker" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costb"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rulesb"> <property name="Card Text" /> </link>
+	 <link block="structure"> <property name="Structure" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/b-sr.jpg" >
+    <matches> <match name="Trade" value="Banker" /> <match name="Type" value="Resource" /> <match name="Subtype" value="Staple" /> </matches>
+</template>
+<template src="proxy/back/b-r.jpg" >
+    <matches> <match name="Trade" value="Banker" /> <match name="Type" value="Resource" /> </matches>
+    <textblocks>
+	<link block="r-titleb"> <property name="Name" /> </link> 
+	<link block="r-type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="r-rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/b.jpg" >
+    <matches> <match name="Trade" value="Banker" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costb"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rulesb"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+
+<template src="proxy/back/g-c.jpg" >
+    <matches> <match name="Trade" value="Gearsmith" /> <match name="Type" value="Character" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costg"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rulesg"> <property name="Card Text" /> </link>
+	<link block="strg"> <property name="Strength" /> </link><link block="lfeg"> <property name="Life" /> </link><link block="spdg"> <property name="Speed" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/g-l.jpg" >
+    <matches> <match name="Trade" value="Gearsmith" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costg"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rulesg"> <property name="Card Text" /> </link>
+	 <link block="structure"> <property name="Structure" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/g-sr.jpg" >
+    <matches> <match name="Trade" value="Gearsmith" /> <match name="Type" value="Resource" /> <match name="Subtype" value="Staple" /> </matches>
+</template>
+<template src="proxy/back/g-r.jpg" >
+    <matches> <match name="Trade" value="Gearsmith" /> <match name="Type" value="Resource" /> </matches>
+    <textblocks>
+	<link block="r-titleg"> <property name="Name" /> </link> 
+	<link block="r-type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="r-rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/g.jpg" >
+    <matches> <match name="Trade" value="Gearsmith" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costg"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rulesg"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+
+
+<template src="proxy/back/r-c.jpg" >
+    <matches> <match name="Trade" value="Rogue" /> <match name="Type" value="Character" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costr"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link>
+	<link block="strr"> <property name="Strength" /> </link><link block="lfer"> <property name="Life" /> </link><link block="spdr"> <property name="Speed" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/r-l.jpg" >
+    <matches> <match name="Trade" value="Rogue" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costr"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rules"> <property name="Card Text" /> </link>
+	 <link block="structure"> <property name="Structure" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/r-sr.jpg" >
+    <matches> <match name="Trade" value="Rogue" /> <match name="Type" value="Resource" /> <match name="Subtype" value="Staple" /> </matches>
+</template>
+<template src="proxy/back/r-r.jpg" >
+    <matches> <match name="Trade" value="Rogue" /> <match name="Type" value="Resource" /> </matches>
+    <textblocks>
+	<link block="r-titler"> <property name="Name" /> </link> 
+	<link block="r-type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="r-rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/r.jpg" >
+    <matches> <match name="Trade" value="Rogue" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costr"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+
+<template src="proxy/back/w-c.jpg" >
+    <matches> <match name="Trade" value="Warlord" /> <match name="Type" value="Character" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costw"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link>
+	<link block="strw"> <property name="Strength" /> </link><link block="lfew"> <property name="Life" /> </link><link block="spdw"> <property name="Speed" /></link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/w-l.jpg" >
+    <matches> <match name="Trade" value="Warlord" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costw"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 <link block="structure"> <property name="Structure" /> </link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/w-sr.jpg" >
+    <matches> <match name="Trade" value="Warlord" /> <match name="Type" value="Resource" /> <match name="Subtype" value="Staple" /> </matches>
+</template>
+<template src="proxy/back/w-r.jpg" >
+    <matches> <match name="Trade" value="Warlord" /> <match name="Type" value="Resource" /> </matches>
+    <textblocks>
+	<link block="r-titlew"> <property name="Name" /> </link> 
+	<link block="r-type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="r-rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+<template src="proxy/back/w.jpg" >
+    <matches> <match name="Trade" value="Warlord" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costw"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+
+<template src="proxy/back/u-l.jpg" >
+    <matches> <match name="Trade" value="Universal" /> <match name="Type" value="Location" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costu"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	 <link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	 <link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	 <link block="structure"> <property name="Structure" /> </link>
+	 </textblocks>  
+</template>
+<template src="proxy/back/u.jpg" >
+    <matches> <match name="Trade" value="Universal" /> </matches>
+    <textblocks>
+	<link block="title"> <property name="Name" /> </link> <link block="costu"> <property name="Cost" /> </link> <link block="threshold"> <property name="Threshold" /> </link>
+	<link block="type" separator=" -  "> <property name="Trade" /><property name="Type" /> <property name="Subtype" /> </link>
+	<link block="rules"> <property name="Card Text" /> </link><link block="rarity"> <property name="Rarity" /></link>
+	</textblocks>
+</template>
+
+</templates>

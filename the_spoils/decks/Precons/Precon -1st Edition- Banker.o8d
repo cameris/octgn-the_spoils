@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000008">Greed</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003067220">Mau Consultant</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003062220">Intermittently Sneaky Lawyer</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003053220">Dandy Day-Trader</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003054220">Defense Attorney</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003090220">Union Leader</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003073220">Pettifogger</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003088220">Tax Attorney</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003069220">Nasty Butler</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003086220">Skilled Negotiator</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003049220">Blanching Butcher</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003068220">Mau Tough</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003052220">Concealed Goon</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003064220">Limited Liability</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003063220">Irresistible Bribe</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003074220">Postmortem Debenture</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003078220">Red Tape</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003076220">Rate Hike</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003083220">Secret Handshake</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003085220">Shocking Reappearance</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003087220">Summary Judgment</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003050220">Brummagem Jewelry</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003047220">Armored Keep</card>
+  </section>
+  <section name="Faction" />
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000006">The Tournament Faction</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000008">Greed</card>
+  </section>
+</deck>

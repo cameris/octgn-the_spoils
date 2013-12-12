@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000009">Elitism</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005089220">313373 M3ch4n1c</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005095220">B14nd P3pp3r</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005098220">Cowering Golem</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005099220">Drivey Car</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005100220">Essence of Elitism</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005101220">Fleet Golem</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005102220">H07 P3pp3r</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005104220">Inconspicuous Golem</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005105220">Ingenious Tinker</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005107220">Massive Erecting Golem</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005110220">Mud Whisperer Wannabe</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005111220">Multi-Attachment Man</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005112220">Mundane Pupil</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005117220">Protractive Golem</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005118220">Repurpose</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005119220">Rune of Concealment</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005120220">Runic Armor</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005122220">Runic Reinforcement</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005123220">Runic Tattoo Artist</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005124220">Runic Whale</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005125220">Runivoltaic Accumulator</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005126220">Surprising Nuisance</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005127220">Tamper</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005128220">Terra Cotta Flagellator</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005130220">Unbearably Heavy Shoes of Teleportation</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005131220">Velocious Golem</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000014">Alliance of Handy Weirdos</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000009">Elitism</card>
+  </section>
+</deck>

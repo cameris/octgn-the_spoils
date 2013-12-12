@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000010">Deception</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003169220">Scrag</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003145220">Dock Sentinel</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003142220">Catastrophic Betrayal</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003138220">Befuddling Beggar</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003156220">Impulsive Abductress</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003167220">Rocket Boots</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003144220">Defenestrate</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003171220">Sudden Osprey</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003170220">Snake Eyes</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003166220">Red Raven</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003161220">Pillaging Pirate</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003153220">Headlong Purloiner</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003137220">Ambuscade</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003136220">Adroit Marauder</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003140220">Card Counter</card>
+    <card qty="3" id="7e9610d4-c06d-437d-a5e6-000003143220">Costly Filcher</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003149220">Ferrous Ferret</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003172220">Swashbuckler</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003147220">Entrancing Harlot</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003150220">Forced Recruitment</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003176220">Vander Malagut</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000006">The Tournament Faction</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000010">Deception</card>
+  </section>
+</deck>

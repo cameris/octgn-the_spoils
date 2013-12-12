@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005001220">Anathematize</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005003220">Brainbath</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005004220">Confounding Conjurer</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005009220">Encumber</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005010220">Ensorcelled Familiar</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005011220">Essence of Obsession</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005012220">Evanesce</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005013220">Fiendish Fez</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005014220">Flagitious Denunciator</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005016220">Foul Diviner</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005018220">Horrendous Behemoth</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005019220">Horrifying Brain-Monkey</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005022220">Lingamite Torture Monk</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005023220">Living God of Thabbash</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005024220">Mesmerizing Enchantress</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005026220">Nefarious Horror</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005030220">Perturbatious Warlock</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005032220">Rouse</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005033220">Sequestered Hellion</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005034220">Shrouded Demon</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005036220">Stupidify</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005039220">The Abominable Hamster</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005040220">Unimportant Wizard</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005041220">Virulent Dogmatist</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005043220">Wanton Wizard</card>
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000007">Obsession</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000012">Moist Cave of the Darkpump</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000007">Obsession</card>
+  </section>
+</deck>

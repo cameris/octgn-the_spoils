@@ -25,9 +25,10 @@ ActivateColor = "#ffffff"
 AttackColor = "#ff0000"
 NSOTColor = "#ff8800"
 BlockColor = "#0000ff"
-DoesntUntapColor ="ffff00"
 
-RedMarker = ("token", "844d5fe3-bdb5-4ad2-5fa4-000000000025")
+token_marker = ("Token", "7e9610d4-c06d-437d-a5e6-100000000001")
+locdmg_marker = ("Location Damage", "7e9610d4-c06d-437d-a5e6-100000000002")
+dont_restore_marker = ("Don't Restore", "7e9610d4-c06d-437d-a5e6-100000000007")
 
 CURRENT_LAYOUT_VERSION = "0.9"
 DEFAULT_LAYOUT= "[['tok','chr','itm'],['res','fac','loc'],['oog']]"
@@ -107,7 +108,7 @@ def goToRestore(group, x = 0, y = 0):
 	mute()
 	myCards = (card for card in table
 				if card.controller == me
-				and card.highlight != DoesntUntapColor)
+				and not has_dont_restore_marker(card))
 	for card in myCards: 
 		card.orientation &= ~Rot90
 
@@ -260,53 +261,99 @@ def block(card, x = 0, y = 0):
 	card.highlight = BlockColor
 	notify('{} blocks with {}'.format(me, card))
 
-def addmarker(cards, x = 0, y = 0):
+def add_marker(cards, x = 0, y = 0):
 	mute()
 	marker, quantity = askMarker()
 	if quantity == 0: return
 	for c in cards:
 		c.markers[marker] += quantity
-		notify("{} adds {} {} token to {}.".format(me, quantity, marker[0], c))
+		notify("{} adds {} {} marker to {}.".format(me, quantity, marker[0], c))
 
-def addredcounter(card, x = 0, y = 0):
+def add_token(card, x = 0, y = 0): # {{{
 	mute()
 	notify("{} adds a token to {}.".format(me, card))
-	card.markers[RedMarker] += 1
+	card.markers[token_marker] += 1
+	# }}}
 
-def removeredcounter(card, x = 0, y = 0):
+def remove_token(card, x = 0, y = 0): # {{{
 	mute()
 	notify("{} removes a token to {}.".format(me, card))
-	card.markers[RedMarker] -= 1
+	card.markers[token_marker] -= 1
+	# }}}
+
+def add_loc_dmg(card, x = 0, y = 0): # {{{
+	mute()
+	notify("{} adds a location damage marker to {}.".format(me, card))
+	card.markers[locdmg_marker] += 1
+	# }}}
+
+def remove_loc_dmg(card, x = 0, y = 0): # {{{
+	mute()
+	notify("{} removes a location damage marker from {}.".format(me, card))
+	card.markers[locdmg_marker] -= 1
+	# }}}
 
 def flip_up(cards, x = 0, y = 0): # {{{
 	mute()
 	global factionid
 	global inplay_since_SOT
 
-	if len(cards) > 1:
-		whisper("multiple cards selected, \"flip up/down\" only works on single cards")
-		return
-	card = cards[0]
+	faceup_count = 0
+	for card in cards:
+		if card.isFaceUp:
+			faceup_count += 1
 
-	if card.isFaceUp:
-		card.isFaceUp = False
-		card.orientation = Rot0
-		notify("{} flips down {}.".format(me, card))
-		card.peek()
-		reposition_cards(me)
-	else:
+	if len(cards) == faceup_count: # flip down selected cards
 		attached = eval(getGlobalVariable("attached"))
+		changed_attached = False
+
+		for card in cards:
+			# detach card if it was attached
+			for targetid in attached:
+				if card._id in attached.get(targetid,[]):
+						attached[targetid].remove(card._id)
+						changed_attached = True
+
+			# remove all markers
+			for marker in card.markers:
+				card.markers[marker] = 0
+
+			card.isFaceUp = False
+			card.orientation = Rot0
+			notify("{} flips down {}.".format(me, card))
+			card.peek()
+
+		if changed_attached:
+			setGlobalVariable("attached", str(attached))
+				
+		reposition_cards(me)
+
+	elif len(cards) == 1 and faceup_count == 0: # flip up single card
+		card = cards[0]
+		attached = eval(getGlobalVariable("attached"))
+
 		# remove from faction attached list
 		if card._id in attached.get(factionid,[]):
 			attached[factionid].remove(card._id)
 			setGlobalVariable("attached", str(attached))
+
 		# remove from inplay list
 		if inplay_since_SOT.count(card._id):
 			inplay_since_SOT.remove(card._id)
 
+		# remove all markers
+		for marker in card.markers:
+			card.markers[marker] = 0
+
 		card.isFaceUp = True
 		notify("{} flips up {}.".format(me, card))
 		trigger_response(me, card, 'play')
+
+	elif len(cards) > 1 and faceup_count == 0: # flip up only wroks on single cards
+		whisper("multiple cards selected, \"flip up\" only works on single cards")
+	
+	else:
+		whisper("select either one facedown card or multiple faceup cards")
 	# }}}
 
 def reveal(card, x = 0, y = 0):
@@ -325,6 +372,15 @@ def clear(card, x = 0, y = 0):
 	notify("{} clears {}.".format(me, card))
 	card.highlight = None
 	card.target(False)
+
+def toggle_dont_restore(card, x = 0, y = 0): # {{{
+	mute()
+
+	if card.markers[dont_restore_marker] == 0:
+		card.markers[dont_restore_marker] = 1
+	else:
+		card.markers[dont_restore_marker] = 0
+	# }}}
 
 
 #---------------------------
@@ -690,7 +746,7 @@ def on_card_click(card, button, keys): # {{{
 	if card.controller == me:
 		if button == 0: # left click
 			if 'Tab' in keys:
-				use_ability(card)
+				use_ability([card])
 			elif 'LeftAlt' in keys:
 				if card.group == me.hand:
 					playresource(card)
@@ -1014,6 +1070,12 @@ def has_oog_marker(card): # {{{
 		if marker[0].lower()[:3] == 'oog':
 			oog_marker = True
 	return oog_marker # }}}
+
+def has_dont_restore_marker(card): # {{{
+	for marker in card.markers:
+		if marker[1] == dont_restore_marker[1]:
+			return True
+	return False # }}}
 
 #------------------------------------------------------------------------------
 # Layout and placement

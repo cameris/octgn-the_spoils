@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000008">Greed</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005047220">Avuncular Merlion</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005049220">Because God Said So!</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005050220">Black Scourge of the Brine</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005052220">Chancellor of Reinstatement</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005053220">Circumspect Hijacker</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005054220">Crushing Usury</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005055220">D3ck W4rd3n</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005057220">Desserted Island</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005058220">Essence of Greed</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005060220">Extravagant Contusion</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005061220">Fiscal Intercessor</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005062220">Flabbergasting Philosopher</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005064220">Fountain Diver</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005065220">Frisky Fortunehunter</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005066220">High Court of Demands</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005067220">Hungry-Hungry Idol</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005068220">Inconvenient Roadblock</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005075220">Prehensile Pirate</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005077220">Prostitution Lobbyist</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005079220">Scintillating Chamber Pot</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005080220">Slick Orator</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005081220">Subordinate Demotivation</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005082220">Temple Guardian</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000005086220">Underpaid Ancestor</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000005087220">Unscrupulous Attendant</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000013">Order of the Golden String</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000008">Greed</card>
+  </section>
+</deck>

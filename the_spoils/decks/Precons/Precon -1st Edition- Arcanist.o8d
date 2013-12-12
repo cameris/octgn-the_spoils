@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000007">Obsession</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003040220">Voidal Observatory</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003008220">Compulsive Creeper</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003032220">Sneaking Spitspider</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003025220">Quotidian Ejector</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003023220">Ominous Oozling</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003037220">Swarm of Gnats</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003030220">Servile Centipede</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003020220">Mephitic Nullifier</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003012220">Forget</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003024220">Quotidian Assassination</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003001220">12 Man Brunch of Doom</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003028220">Ritual of the Screaming Cheese</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003035220">Spontaneous Displacement</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003044220">Voidal Webbing</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003036220">Stolen Inspiration</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003002220">Air Travel</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003005220">Arcana Experiment</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003027220">Remember</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003018220">Lugubrious Finger Trap</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003006220">Arcanist's Almanac</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003038220">Very Big Hat of Invisibility</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003021220">Napiform Protuberance</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000006">The Tournament Faction</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000007">Obsession</card>
+  </section>
+</deck>

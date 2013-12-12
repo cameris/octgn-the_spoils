@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88">
+  <section name="Game Deck">
+    <card qty="16" id="7e9610d4-c06d-437d-a5e6-000000000011">Rage</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003199220">Heirloom Incinerator</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003185220">Cannon Squadron</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003184220">Bloodcurdling Bulldozer</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003179220">Arena Quarter-Finalist</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003205220">Plodding Brute</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003219220">Target Practice</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003207220">Raging Bask</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003198220">Hammer Smash</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003211220">Scout</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003196220">Flaming Barduse</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003215220">Sleeping Guard</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003214220">Skewer</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003204220">Oversoon Lightfoot</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003202220">Kettinger</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003195220">Eye Gouge</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003194220">Dragon's Strategy</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003189220">Dragon Juice</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003187220">Creaky Old Swordsman</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000003186220">Crazed Deputy</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003200220">Hidden Sniper</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003216220">Stalwart Soldier</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003217220">Strength In Numbers</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003192220">Dragon's Anthem</card>
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000003182220">Berserker Corps</card>
+  </section>
+  <section name="Faction">
+    <card qty="1" id="7e9610d4-c06d-437d-a5e6-000000000006">The Tournament Faction</card>
+    <card qty="2" id="7e9610d4-c06d-437d-a5e6-000000000011">Rage</card>
+  </section>
+</deck>

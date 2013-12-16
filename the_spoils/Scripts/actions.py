@@ -507,8 +507,8 @@ def removexcards(group, count = None):
 
 def playfacedown(card, x = 0, y = 0):
 	mute()
+	notify("{} plays card face-down from their {}.".format(me, card.group.name))
 	card.moveToTable(0, 0, True)
-	notify("{} plays card face-down from their {}.".format(me, card.group))
 
 def randomdraw(group):
 	mute()

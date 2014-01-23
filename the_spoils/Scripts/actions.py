@@ -484,31 +484,42 @@ def shuffle2(group, x = 0, y = 0):
 	group.shuffle()
 	notify("{} shuffled his Discard Pile".format(me))
 
-def drawMany(group, count = None):
+def drawMany(group, count = None): # {{{
 	if len(group) == 0: return
 	mute()
 	if count == None: count = askInteger("Draw how many cards?", 0)
-	for c in group.top(count): c.moveTo(me.hand)
-	notify("{} draws {} cards.".format(me, count))
+	if count > 0:
+		for c in group.top(count): c.moveTo(me.hand)
+		notify("{} draws {} cards.".format(me, count))
+	# }}}
 
-def destroyxcards(group, count = None):
+def destroyxcards(group, count = None): # {{{
 	if len(group) == 0: return
 	mute()
-	if count == None: count = askInteger("Mill how many cards?", 3)
-	for c in group.top(count): c.moveTo(me.piles['Discard pile'])
-	notify("{} puts {} cards from their Deck into their discard pile.".format(me, count))
+	if count == None: count = askInteger("Put how many cards into Discard pile?", 0)
+	if count > 0:
+		notify("{} puts {} card(s) from their {} into their Discard pile:".format(me, count, group.name))
+		for c in group.top(count):
+			c.moveTo(me.piles['Discard pile'])
+			notify("{}".format(c))
+	# }}}
 
-def removexcards(group, count = None):
+def removexcards(group, count = None): # {{{
 	if len(group) == 0: return
 	mute()
-	if count == None: count = askInteger("Mill how many cards?", 1)
-	for c in group.top(count): c.moveTo(me.piles['out of game'])
-	notify("{} removes {} from game.".format(me, count))
+	if count == None: count = askInteger("Remove how many cards from the game?", 0)
+	if count > 0:
+		notify("{} removes {} card(s) from their {} from the game:".format(me, count, group.name))
+		for c in group.top(count):
+			c.moveTo(me.piles['out of game'])
+			notify("{}".format(c))
+	# }}}
 
-def playfacedown(card, x = 0, y = 0):
+def playfacedown(card, x = 0, y = 0): # {{{
 	mute()
 	notify("{} plays card face-down from their {}.".format(me, card.group.name))
 	card.moveToTable(0, 0, True)
+	# }}}
 
 def randomdraw(group):
 	mute()

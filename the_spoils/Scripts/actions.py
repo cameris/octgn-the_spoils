@@ -30,6 +30,8 @@ token_marker = ("Token", "7e9610d4-c06d-437d-a5e6-100000000001")
 locdmg_marker = ("Location Damage", "7e9610d4-c06d-437d-a5e6-100000000002")
 dont_restore_marker = ("Don't Restore", "7e9610d4-c06d-437d-a5e6-100000000007")
 
+STD_MICROMAJIG_GUID = "7e9610d4-c06d-437d-a5e6-000000000028"
+
 CURRENT_LAYOUT_VERSION = "0.9"
 DEFAULT_LAYOUT= "[['tok','chr','itm'],['res','fac','loc'],['oog']]"
 DEFAULT_LAYOUT_SPACER = "{'card': 6, 'group': 40, 'same': 15, 'resource': 22, 'row': 10, 'attach_x': 15, 'attach_y': 15}"
@@ -175,7 +177,11 @@ def flipCoin(group, x = 0, y = 0):
 	else:
 		notify("{} flips tails.".format(me))
 
-def token(group, x = 0, y = 0):
+def micromajig(group, x = 0, y = 0):
+	table.create(STD_MICROMAJIG_GUID, x, y)
+	reposition_cards(me)
+
+def micromajig_menu(group, x = 0, y = 0):
 	card, quantity = askCard({"Card Number": "Token"}, "and")
 	if quantity == 0: return
 	table.create(card, x, y, quantity)

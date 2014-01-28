@@ -2,8 +2,8 @@
 <game 
 	name="The Spoils" 
 	id="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88" 
-	octgnVersion="3.1.111.250" 
-	version="1.4.4.3" 
+	octgnVersion="3.1.126.269" 
+	version="1.4.4.4" 
 	markersize="16" 
 	tags="game octgn The Spoils best game ever" 
 	description="The Spoils is perhaps the best CCG ever conceived. 
@@ -103,7 +103,8 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 	<groupaction menu="Clear targets and combat" shortcut="Esc" execute="clearAll" />
 	<groupaction menu="No" shortcut="F1" execute="answer_no" />
 	<groupaction menu="Yes" shortcut="F2" execute="answer_yes" />
-	<groupaction menu="Create Micromajig" shortcut="ctrl+M" execute="token" />
+	<groupaction menu="Create single Micromajig" shortcut="alt+M" execute="micromajig" />
+	<groupaction menu="Create Micromajig" shortcut="ctrl+M" execute="micromajig_menu" />
 	<groupaction menu="Roll 20-sided Die" shortcut="ctrl+shift+R" execute="roll20" />
 	<groupaction menu="Roll 6-sided Die" shortcut="ctrl+R" execute="roll6" />
 	<groupaction menu="Flip a Coin" shortcut="ctrl+F" execute="flipCoin" />

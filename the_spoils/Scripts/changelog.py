@@ -19,4 +19,7 @@ changelog = {
 		"Added location damage markers",
 		"Added \"Don't Restore\" card function",
 	],
+	"1.4.4.4": [
+		"Added \"Alt + M\" shortcut to create a single Micromajig"
+	],
 }

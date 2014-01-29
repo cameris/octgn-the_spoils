@@ -482,13 +482,10 @@ def draw(group, x = 0, y = 0):
 	group[0].moveTo(me.hand)
 	notify("{} draws a card.".format(me))
 
-def shuffle(group, x = 0, y = 0):
+def shuffle(group, x = 0, y = 0): # {{{
 	group.shuffle()
-	notify("{} shuffled his deck".format(me))
-
-def shuffle2(group, x = 0, y = 0):
-	group.shuffle()
-	notify("{} shuffled his Discard Pile".format(me))
+	notify("{} shuffled his {}".format(me, group.name))
+	# }}}
 
 def drawMany(group, count = None): # {{{
 	if len(group) == 0: return
@@ -527,12 +524,13 @@ def playfacedown(card, x = 0, y = 0): # {{{
 	card.moveToTable(0, 0, True)
 	# }}}
 
-def randomdraw(group):
+def randomdraw(group): # {{{
 	mute()
 	card = group.random()
 	if card == None: return
-	notify("{} randomly draws a card.".format(me))
+	notify("{} randomly draws a card from their {}.".format(me, group.name))
 	card.moveTo(me.hand)
+	# }}}
 
 #------------------------------------------------------------------------------
 # Events

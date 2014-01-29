@@ -3,7 +3,7 @@
 	name="The Spoils" 
 	id="844d5fe3-bdb5-4ad2-ba83-88c2c2db6d88" 
 	octgnVersion="3.1.126.269" 
-	version="1.4.4.4" 
+	version="1.4.4.5" 
 	markersize="16" 
 	tags="game octgn The Spoils best game ever" 
 	description="The Spoils is perhaps the best CCG ever conceived. 
@@ -98,7 +98,6 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 		<cardaction menu="Draw Deck" shortcut="ctrl+Z" execute="movetodrawdeck" />
 		<cardaction menu="Bottom of Draw Deck" shortcut="ctrl+alt+Z" execute="movetobottom" />
 	</cardactions>
-
 	<groupaction menu="Rearrange Cards" shortcut="ctrl+W" execute="arrange_cards" />
 	<groupaction menu="Clear targets and combat" shortcut="Esc" execute="clearAll" />
 	<groupaction menu="No" shortcut="F1" execute="answer_no" />
@@ -162,21 +161,39 @@ If you resurrected JRR Tolkien, HP Lovecraft and Lewis Carroll, and then forced 
 	<cardaction menu="Play face-down" execute="playfacedown" />
 	<cardaction menu="Destroy Card" shortcut="del" execute="destroy" />
 	<cardaction menu="Use Ability (Tab+LeftClick)" shortcut="ctrl+E" execute="use_ability" />
+	<cardactions menu="Move to..." >
+		<cardaction menu="Hand" shortcut="ctrl+H" execute="tohand" />
+		<cardaction menu="Discard Pile" shortcut="del" execute="destroy" />
+		<cardaction menu="Out of Game" shortcut="ctrl+X" execute="removefromgame" />
+		<cardaction menu="Bottom of Draw Deck" shortcut="ctrl+alt+Z" execute="movetobottom" />
+	</cardactions>
 
 </group>
 
 <group name="Discard pile" shortcut="del" visibility="all" width="63" height="88" icon="groups/discard.png" >
 
-	<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle2" />
+	<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
 	<groupaction menu="Randomly draw a Card" execute="randomdraw" />
 	<cardaction menu="Play face-down" execute="playfacedown" />
 	<cardaction menu="Use Ability (Tab+LeftClick)" shortcut="ctrl+E" execute="use_ability" />
+	<cardactions menu="Move to..." >
+		<cardaction menu="Hand" shortcut="ctrl+H" execute="tohand" />
+		<cardaction menu="Out of Game" shortcut="ctrl+X" execute="removefromgame" />
+		<cardaction menu="Draw Deck" shortcut="ctrl+Z" execute="movetodrawdeck" />
+		<cardaction menu="Bottom of Draw Deck" shortcut="ctrl+alt+Z" execute="movetobottom" />
+	</cardactions>
 
 </group>
 
 <group name="Out of game" shortcut="ctrl+X" visibility="all" width="63" height="88" icon="groups/oog.png" collapsed="True">
 
 	<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	<cardactions menu="Move to..." >
+		<cardaction menu="Hand" shortcut="ctrl+H" execute="tohand" />
+		<cardaction menu="Discard Pile" shortcut="del" execute="destroy" />
+		<cardaction menu="Draw Deck" shortcut="ctrl+Z" execute="movetodrawdeck" />
+		<cardaction menu="Bottom of Draw Deck" shortcut="ctrl+alt+Z" execute="movetobottom" />
+	</cardactions>
 
 </group>
 

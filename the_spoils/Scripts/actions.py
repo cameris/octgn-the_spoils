@@ -397,8 +397,11 @@ def destroy(card, x = 0, y = 0):
 	mute()
 	src = card.group
 	fromText = " from play" if src == table else " from their " + src.name
-	notify("{} destroys {}{}.".format(me, card, fromText))
+	if src == table:
+		notify("{} destroys {}{}.".format(me, card, fromText))
 	card.moveTo(card.owner.piles['Discard pile'])
+	if src != table:
+		notify("{} destroys {}{}.".format(me, card, fromText))
 
 def removefromgame(card, x = 0, y = 0):
 	mute()

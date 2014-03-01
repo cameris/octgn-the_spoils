@@ -766,6 +766,8 @@ def on_turn(player, turn): # {{{
 	# }}}
 
 def on_card_click(card, button, keys): # {{{
+	if card == None:
+		return
 	if card.controller == me:
 		if button == 0: # left click
 			if 'Tab' in keys:

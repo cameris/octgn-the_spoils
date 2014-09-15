@@ -1950,7 +1950,7 @@
           <property name="Rarity" value="Rare" />
           <property name="Trade" value="Gearsmith" />
           <property name="Type" value="Character" />
-          <property name="Subtype" value="guardforcee, 31f" />
+          <property name="Subtype" value="guardforce, 31f" />
           <property name="Threshold" value="EEE" />
           <property name="Cost" value="5" />
           <property name="Strength" value="4" />

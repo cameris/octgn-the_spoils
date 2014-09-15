@@ -1534,7 +1534,7 @@
           <property name="Trade" value="Universal" />
           <property name="Type" value="Location" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="" />
+          <property name="Threshold" value="V" />
           <property name="Cost" value="1" />
           <property name="Strength" value="" />
           <property name="Life" value="" />

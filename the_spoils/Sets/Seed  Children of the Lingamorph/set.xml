@@ -381,7 +381,7 @@
           <property name="Trade" value="Arcanist" />
           <property name="Type" value="Resource" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="OO" />
+          <property name="Threshold" value="" />
           <property name="Cost" value="" />
           <property name="Strength" value="" />
           <property name="Life" value="" />
@@ -833,7 +833,7 @@
           <property name="Trade" value="Banker" />
           <property name="Type" value="Resource" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="GG" />
+          <property name="Threshold" value="" />
           <property name="Cost" value="" />
           <property name="Strength" value="" />
           <property name="Life" value="" />
@@ -1316,7 +1316,7 @@
           <property name="Trade" value="Gearsmith" />
           <property name="Type" value="Resource" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="EE" />
+          <property name="Threshold" value="" />
           <property name="Cost" value="" />
           <property name="Strength" value="" />
           <property name="Life" value="" />
@@ -2477,7 +2477,7 @@
           <property name="Trade" value="Rogue" />
           <property name="Type" value="Resource" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="DD" />
+          <property name="Threshold" value="" />
           <property name="Cost" value="" />
           <property name="Strength" value="" />
           <property name="Life" value="" />
@@ -3086,7 +3086,7 @@
           <property name="Trade" value="Warlord" />
           <property name="Type" value="Resource" />
           <property name="Subtype" value="" />
-          <property name="Threshold" value="RR" />
+          <property name="Threshold" value="" />
           <property name="Cost" value="" />
           <property name="Strength" value="" />
           <property name="Life" value="" />
